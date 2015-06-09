@@ -38,13 +38,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         user.city = "San Francisco"
         user.link = "http://somewebsite.com"
         
+        //Creating and populating 10 cells
+        for var i = 0; i < 10; i++ {
         var update = Update()
         update.date = NSDate()
-        update.text = "Hello, World"
+        //The i will print out the cell number
+        update.text = "Hello, World \(i)"
         update.user = user
         
         updates?.append(update)
-        
+        }
     }
     
     //MARK: - UITableViewDataSource

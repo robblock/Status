@@ -13,5 +13,5 @@ class User {
     var bio: String?
     var username: String?
     var link: String?
-    var city: String
+    var city: String?
 }

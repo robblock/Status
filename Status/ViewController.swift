@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     
@@ -25,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         //adding the tableView brings in the tableView dataSource
         tableView.dataSource = self
+        tableView.delegate = self
         
         //TODO: Sample data, remove when getting real data
         
@@ -64,16 +65,22 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        //TODO: Make this cell reusable
+        //TODO: Make this cell reusable 
        var cell =  NSBundle.mainBundle().loadNibNamed("UpdateTableViewCell", owner: self, options: nil).first as! UpdateTableViewCell
         
         
         //this is creating a brandnew cell
         //var cell = UpdateTableViewCell()
         //The green updates is the updates at the top of the file, the white updates is the local one. Everything within this scope is going to talk to the white updates. This white updates is a constant. very often people will call their if let statment the sme thing they are looking for.
+        var rowHeight: CGFloat  // will return the default value if unset
         if let updates = updates {
             var update = updates[indexPath.row]
             cell.updateTextLabel?.text = update.text
+            
+            if let user = update.user {
+                cell.textBox.text = user.username
+                cell.userName.text = user.name
+            }
         }
         
         return cell

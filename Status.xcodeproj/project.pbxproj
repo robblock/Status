@@ -13,6 +13,8 @@
 		281248C01B267B5A003267BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281248BF1B267B5A003267BD /* Images.xcassets */; };
 		281248C31B267B5A003267BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281248C11B267B5A003267BD /* LaunchScreen.xib */; };
 		281248CF1B267B5A003267BD /* StatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248CE1B267B5A003267BD /* StatusTests.swift */; };
+		281248D91B267EFB003267BD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248D81B267EFB003267BD /* user.swift */; };
+		281248DB1B268007003267BD /* update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248DA1B268007003267BD /* update.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		281248C81B267B5A003267BD /* StatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281248CD1B267B5A003267BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		281248CE1B267B5A003267BD /* StatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTests.swift; sourceTree = "<group>"; };
+		281248D81B267EFB003267BD /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		281248DA1B268007003267BD /* update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = update.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				281248B81B267B5A003267BD /* AppDelegate.swift */,
 				281248BA1B267B5A003267BD /* ViewController.swift */,
 				281248BC1B267B5A003267BD /* Main.storyboard */,
+				281248D81B267EFB003267BD /* user.swift */,
+				281248DA1B268007003267BD /* update.swift */,
 				281248BF1B267B5A003267BD /* Images.xcassets */,
 				281248C11B267B5A003267BD /* LaunchScreen.xib */,
 				281248B61B267B5A003267BD /* Supporting Files */,
@@ -214,6 +220,8 @@
 			files = (
 				281248BB1B267B5A003267BD /* ViewController.swift in Sources */,
 				281248B91B267B5A003267BD /* AppDelegate.swift in Sources */,
+				281248DB1B268007003267BD /* update.swift in Sources */,
+				281248D91B267EFB003267BD /* user.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

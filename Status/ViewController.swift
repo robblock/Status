@@ -65,12 +65,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //TODO: Make this cell reusable
+       var cell =  NSBundle.mainBundle().loadNibNamed("UpdateTableViewCell", owner: self, options: nil).first as! UpdateTableViewCell
+        
+        
         //this is creating a brandnew cell
-        var cell = UITableViewCell()
+        //var cell = UpdateTableViewCell()
         //The green updates is the updates at the top of the file, the white updates is the local one. Everything within this scope is going to talk to the white updates. This white updates is a constant. very often people will call their if let statment the sme thing they are looking for.
         if let updates = updates {
             var update = updates[indexPath.row]
-            cell.textLabel?.text = update.text
+            cell.updateTextLabel?.text = update.text
         }
         
         return cell

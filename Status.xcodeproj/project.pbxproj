@@ -15,6 +15,8 @@
 		281248CF1B267B5A003267BD /* StatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248CE1B267B5A003267BD /* StatusTests.swift */; };
 		281248D91B267EFB003267BD /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248D81B267EFB003267BD /* user.swift */; };
 		281248DB1B268007003267BD /* update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248DA1B268007003267BD /* update.swift */; };
+		281248DE1B269555003267BD /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281248DC1B269555003267BD /* UpdateTableViewCell.swift */; };
+		281248DF1B269555003267BD /* UpdateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281248DD1B269555003267BD /* UpdateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		281248CE1B267B5A003267BD /* StatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTests.swift; sourceTree = "<group>"; };
 		281248D81B267EFB003267BD /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		281248DA1B268007003267BD /* update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = update.swift; sourceTree = "<group>"; };
+		281248DC1B269555003267BD /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
+		281248DD1B269555003267BD /* UpdateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UpdateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				281248B81B267B5A003267BD /* AppDelegate.swift */,
 				281248BA1B267B5A003267BD /* ViewController.swift */,
 				281248BC1B267B5A003267BD /* Main.storyboard */,
+				281248DC1B269555003267BD /* UpdateTableViewCell.swift */,
+				281248DD1B269555003267BD /* UpdateTableViewCell.xib */,
 				281248D81B267EFB003267BD /* user.swift */,
 				281248DA1B268007003267BD /* update.swift */,
 				281248BF1B267B5A003267BD /* Images.xcassets */,
@@ -200,6 +206,7 @@
 			files = (
 				281248BE1B267B5A003267BD /* Main.storyboard in Resources */,
 				281248C31B267B5A003267BD /* LaunchScreen.xib in Resources */,
+				281248DF1B269555003267BD /* UpdateTableViewCell.xib in Resources */,
 				281248C01B267B5A003267BD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				281248BB1B267B5A003267BD /* ViewController.swift in Sources */,
+				281248DE1B269555003267BD /* UpdateTableViewCell.swift in Sources */,
 				281248B91B267B5A003267BD /* AppDelegate.swift in Sources */,
 				281248DB1B268007003267BD /* update.swift in Sources */,
 				281248D91B267EFB003267BD /* user.swift in Sources */,
